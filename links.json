@@ -1,0 +1,26 @@
+{
+	"dwm" :
+   	{
+		"programme":"https://dl.suckless.org/dwm/dwm-6.2.tar.gz",
+		"patches": []
+	},
+
+	"stterm" : 
+	{
+		"programme" : "https://dl.suckless.org/st/st-0.8.5.tar.gz",
+		"patches": []
+	},
+
+	"dmenu" : 
+	{
+		"programme" : "https://dl.suckless.org/tools/dmenu-5.1.tar.gz",
+		"patches" : []
+	},
+
+	"dwmblocks" :
+	{
+		"programme":"https://github.com/torrinfail/dwmblocks",
+		"patches" : []
+	}
+}
+
