@@ -32,7 +32,7 @@ chmod +x sai.py                               #make script executable
 
 ## How to use
 > repository already contains links.json, all you have to do is to edit it
-* First of all you have to fill `links.json` file with links (or patches) to software you are going to install :  
+* First of all you have to fill `links.json` file with links to software (or patches) you are going to install :  
 Example json below
 ```json
 {
@@ -51,7 +51,7 @@ Example json below
 	{
 		"programme" : "https://dl.suckless.org/st/st-0.8.5.tar.gz",
 		"patches":[]
-	},
+	}
 }
 ```
 
