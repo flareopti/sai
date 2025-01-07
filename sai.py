@@ -29,15 +29,18 @@ def download(links,link):
         os.chdir(link)
         
         if os.path.exists(links[link]['programme']):
-            os.replace(link,f'{maindir}/{filename}')
+            shutil.copytree(links[link]['programme'],f'{maindir}/{link}/{filename}', dirs_exist_ok=True)
+            return
         if extension != 'gz':
             print(link,os.getcwd())
             subprocess.check_call(['git','clone',links[link]['programme']])
+            return
         else:
             response = requests.get(links[link]['programme'])
             open(filename,"wb").write(response.content)
             with tarfile.open(filename) as tar:
                 tar.extractall()
+            return
 
 
 def setup(links, action):
